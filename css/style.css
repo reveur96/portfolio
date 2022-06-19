@@ -1,0 +1,108 @@
+*{margin: 0; padding: 0;}
+body{width: 100%;
+height: auto;}
+img{border: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none;}
+
+/* 상단 */
+#header{
+  width: 1920px;
+  height: 1080px;
+  background: url(../images/mainimg.png) no-repeat;
+  background-size: 100%; 
+}
+#header nav{
+  width: 1920px;
+  height: 120px;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+#header nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+#header nav li{ 
+ margin-right: 50px;
+}
+
+#header nav li > a{
+  font-size: 20px;
+  color: aliceblue;
+}
+
+/* 상단 메인 */
+#main{  
+  width: 1920px;
+  margin: 250px;
+}
+
+#main h3{ 
+ font-size: 70px;
+ color: aliceblue;
+ letter-spacing: 5px;
+ margin: 15px 0;
+}
+#main p{
+  font-size: 30px;
+  color: aliceblue;
+  letter-spacing: 5px;
+}
+
+#main p:last-child{
+  font-size: 50px;
+  color: aliceblue;
+  font-weight: 700;
+  letter-spacing: 35px;
+}
+
+/* 우측고정 인덱스바 */
+#indexbar{
+
+}
+
+/* 컨텐츠 */
+#contents{
+  width: 1920px;
+}
+
+/* 컨텐츠 About me */
+#contents .aboutme{
+  width: 100%;
+  height: 1080px;
+  background-color: darkseagreen;
+}
+
+/* 컨텐츠 Project */
+#contents .project{
+  width: 100%;
+  height: 1080px;
+}
+#contents .project01{
+  background-color: cadetblue;
+}
+#contents .project02{
+  background-color: cornflowerblue;
+}
+#contents .project03{
+  background-color: darkcyan;
+}
+
+/* 컨텐츠 contact */
+#contents .contact{
+  width: 100%;
+  height: 1080px;
+  background-color: lightblue;
+}
+/* 하단 */
+#footer{
+  width: 1920px;
+  height: 150px;
+  background-color: blue;
+}
