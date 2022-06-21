@@ -1,6 +1,5 @@
 *{margin: 0; padding: 0;}
-body{width: 100%;
-height: auto;
+body{width: 1920px;
 color: #040463;}
 img{border: 0;}
 ul, li{list-style: none;}
@@ -51,8 +50,9 @@ a{text-decoration: none;
 
 /* 상단 메인 */
 #main{  
-  width: 1920px;
-  margin: 250px;
+  width: 100%;
+  padding: 250px;
+  box-sizing: border-box;
 }
 
 #main h3{ 
@@ -76,7 +76,22 @@ a{text-decoration: none;
 
 /* 우측고정 인덱스바 */
 #indexbar{
-
+  position: fixed;
+  top: 35%;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#indexbar p{
+  font-size: 20px;
+  color: cadetblue;
+}
+#indexbar .indexbar{
+width: 5px;
+height: 300px;
+background-color: lightsteelblue;
+margin: 10px 0;
 }
 
 /* 컨텐츠 */
