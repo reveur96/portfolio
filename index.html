@@ -13,13 +13,15 @@
   <!-- 상단 -->
   <header id="header">
     <nav>
-      <ul>
-        <li><a href="#contents">About me</a></li>
-        <li><a href="#contents">Project01</a></li>
-        <li><a href="#contents">Project02</a></li>
-        <li><a href="#contents">Project03</a></li>
-        <li><a href="#contents">Contact</a></li>
+      <ul class="menu">
+        <li class="nav01"><a href="#aboutme">About me</a></li>
+        <li class="nav02"><a href="#project01">Project01</a></li>
+        <li class="nav03"><a href="#project02">Project02</a></li>
+        <li class="nav04"><a href="#contact">Contact</a></li>
         </ul>
+        <span class="material-symbols-outlined menu_btn">
+          menu
+        </span>
     </nav>
     <section id="main">
       <p>Front End Developer</p>
@@ -28,28 +30,43 @@
     </section>
   </header>
   <!-- 상단 메인 -->
-
+<!-- <aside id="aside">
+  <h5>
+    About me
+    <span class="material-symbols-outlined">expand_more</span>
+  </h5>
+</aside> -->
   <!-- 우측고정 인덱스바 -->
-  <aside id="indexbar">
+  <!-- <aside id="scrollbar">
     <p>01</p>
-    <div class="indexbar"></div>
+    <div class="indexbar">
+      <div class="indexbar_bottom"></div>
+      <div class="indexbar_top"></div>
+    </div>
     <p>06</p>
-  </aside>
+  </aside> -->
 
+  <aside>
+    <div id="top_btn">
+      <a href="#">
+        <span class="material-symbols-outlined">arrow_upward</span>
+      </a>
+    </div>
+  </aside>
   <!-- 컨텐츠 -->
   <section id="contents">
   <!-- 컨텐츠 About me -->
-    <article class="aboutme">
+    <article id="aboutme">
       <header class="contents_header_nav">
-        <h5>
+        <!-- <h5>
           About me
           <span class="material-symbols-outlined">expand_more</span>
-        </h5>
+        </h5> -->
       </header>
       <section>
         <div class="profile">
-          <img src="./images/mainimg.jpg" alt="증명사진">
-          <p>Kim Su Jeong</p>
+          <div class="profile_img"></div>
+          <h5>Kim Su Jeong</h5>
           <p>I majored in Clothing & Textile Design. <br>
             I worked as Fashion Designer and Graphic Designer. <br>
             Now i want to be a Front End Developer.<br>
@@ -63,38 +80,50 @@
              I'm a Creator & Developer.<br>
           </p>
           <p>Strength</p>
-          <span>Passion</span>
-          <span>Tenacity</span>
-          <span>Creative</span>
+          <div class="Strength">
+            <span>Passion</span>
+            <span>Tenacity</span>
+            <span>Creative</span>
+          </div>
         </div>
         <div class="technical_part">
 
           <h5>Technique</h5>
           <div class="technical_part01">
-            <ul>
+            <ul class="technical_part01_txt">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
               <li>React</li>
             </ul>
+            <ul class="technical_part01_bar">
+              <li class="bar01_html"><span></span></li>
+              <li class="bar02_css"><span></span></li>
+              <li class="bar03_js"><span></span></li>
+              <li class="bar04_react"><span></span></li>
+            </ul>
           </div>
 
           <h5>How did i study</h5>
           <div class="technical_part02">
-            <ul class="technical_part02_course">
-              <li>Course</li>
-              <li>How did i study How did i study</li>
-              <li>How did i studyHow did i study</li>
-              <li>How did i studyHow did i study</li>
-              <li>How did i studyHow did i study</li>
-            </ul>
-            <ul class="technical_part02_book">
-              <li>Book</li>
-              <li>How did i study</li>
-              <li>How did i study</li>
-              <li>How did i study</li>
-              <li>How did i study</li>
-            </ul>
+            <div class="technical_part02_course">
+              <p>Course</p>
+              <ul>
+                <li>국비프로그램 프론트엔드 개발자 양성과정<span>진행중</span></span></li>
+                <li>생활코딩 자바스크립트 총정리<span>진행중</span></li>
+                <li>노마드코더 바닐라 자바스크립트로 크롬앱 제작하기<span>완료</span></li>
+                <li>제주 코딩캠프 자바스크립트<span>완료</span></li>
+              </ul>
+            </div>
+            <div class="technical_part02_book">
+              <p>Book</p>
+              <ul>
+                <li>How did i study</li>
+                <li>How did i study</li>
+                <li>How did i study</li>
+                <li>How did i study</li>
+              </ul>
+            </div>
           </div>
 
           <h5>History</h5>
@@ -102,12 +131,12 @@
             <ul>
               <li><span>2014</span>대학교 입학</li>
               <li><span>2015</span></li>
-              <li><span>2016</span></li>
+              <li><span>2016</span>스타트업 브랜드 디자이너로 근무</li>
               <li><span>2017</span></li>
               <li><span>2018</span></li>
-              <li><span>2019</span></li>
-              <li><span>2020</span></li>
-              <li><span>2021</span></li>
+              <li><span>2019</span>대학교 졸업</li>
+              <li><span>2020</span>개인사업체 운영</li>
+              <li><span>2021</span>개인사업체 운영</li>
             </ul>
           </div>
         </div>
@@ -116,7 +145,7 @@
     </article>
 
     <!-- 컨텐츠 Project01 -->
-    <article class="project project01">
+    <article class="project" id="project01">
       <header class="contents_header_nav">
       <h5>
         Project01
@@ -126,7 +155,7 @@
       </header>
       <section>
         <div class="project_detail">
-          <h5>Project title</h5>
+          <h5>HOLLYS COFFEE WEB SITE</h5>
           <p>
             <strong>작업 과정</strong><br>
             타경쟁사들과 달리 하나의 홈페이지에 회사홈페이지와 판매몰을 운영하고 있어서 사용자 입장에서 집중도가 떨어졌다. 또한 프랜차이즈 가맹 문의 고객과 일반 제품 구매를 원하는 고객들이 각자의 목적을 달성하기에 홈페이지의 정보들이 산발적으로 분포되어 있어 사용성이 떨어졌다. 우선 몰을 운영하고 있다는 점이 명확하게 보여지지않아 원활하게 판매로 이어지지않는 점을 보완하여 사용자가 쉽게 구매까지 이어질 수 있도록  구매 프로세스를 단순화한다.  그리고 프랜차이즈 문의 고객들이 브랜드의 색과 전문성을 느낄 수 있도록 제품 판매몰과 기업의 정보들을 분리하여 제공하고, 어떤 페이지에서 이용하여도 바로 문의 페이지로 이어질 수 있도록 접근성을 높인다.
@@ -138,18 +167,16 @@
 
           </p>
           <a href="http://crystal96.dothome.co.kr/" target="_blank">
-            Go to Page
-            <span class="material-symbols-outlined">
-            star
-            </span>
+            ★Go to site★
           </a>
+          <a href="https://github.com/reveur96/my-first-website" target="_blank"> ★github★</a>
         </div>
         <div class="project_preview"></div>
       </section>
     </article>
 
     <!-- 컨텐츠 Project02 -->
-    <article class="project project02">
+    <article class="project" id="project02">
       <header class="contents_header_nav">
         <h5>
           Project02
@@ -159,64 +186,64 @@
       </header>
       <section>
         <div class="project_detail">
-          <h5>Project title</h5>
+          <h5>MOCA</h5>
           <p>
             <strong>작업 과정</strong><br>
-            타경쟁사들과 달리 하나의 홈페이지에 회사홈페이지와 판매몰을 운영하고 있어서 사용자 입장에서 집중도가 떨어졌다. 또한 프랜차이즈 가맹 문의 고객과 일반 제품 구매를 원하는 고객들이 각자의 목적을 달성하기에 홈페이지의 정보들이 산발적으로 분포되어 있어 사용성이 떨어졌다. 우선 몰을 운영하고 있다는 점이 명확하게 보여지지않아 원활하게 판매로 이어지지않는 점을 보완하여 사용자가 쉽게 구매까지 이어질 수 있도록  구매 프로세스를 단순화한다.  그리고 프랜차이즈 문의 고객들이 브랜드의 색과 전문성을 느낄 수 있도록 제품 판매몰과 기업의 정보들을 분리하여 제공하고, 어떤 페이지에서 이용하여도 바로 문의 페이지로 이어질 수 있도록 접근성을 높인다.
+            기존의 사이트는 현재 전시 안내 사항이 메인에 슬라이드로 들어간 것이 전부였다. 그래서 미술관내에 있는 시설이나 여러 교육프로그램의 존재에 대해 사용자가 모르고 지나치는 경우가 발생했다. 이러한 점을 보완하기 위해 사용자들의 니즈가 큰 관람안내 사항을 메인 슬라이드 바로 아래에 배치하고 예약하기 기능을 사이드에 고정 메뉴로 두어 접근성을 높였다. 또한 스크롤 형식으로 메인 하단에 책그림선에 대한 정보와 책그림섬에서 진행하는 프로그램을 배치하여 사용자에게 책그림섬에 대한 정보를 제공한다. 
 
           </p>
           <p>
             <strong>기대효과</strong><br>
-            제품에 정보와 판매까지를 한 화면에서 가능하도록해서 소비자 이탈률을 줄여 구매효과를 상승시킬 수 있다. 제품을 구매하는 소비자와 프랜차이즈 문의를 목적으로 사이트를 방문한 고객들이 혼란을 겪지 않고 목적하는 바를 빠르게 이룰 수 있도록 시각화하여 고객의 접근성을 모두 높일 수 있다. 
+            미술관에서하는 전시 현황 이외에도 사이트에서 제공하는 다양한 서비스들을 사용자가 손쉽게 접근할 수 있어 참여도를 높인다. 다양한과 시설과 교육 프로그램 뿐만아니라 오디오 가이드와 vr전시관까지 사이트에서 제공하는 기능들을 강조하여 사용율을 높일 수 있다.
 
           </p>
-          <a href="http://crystal96.dothome.co.kr/" target="_blank">
-            Go to Page
-            <span class="material-symbols-outlined">
-            star
-            </span>
+          <a href="http://misul3.dothome.co.kr" target="_blank">
+            ★Go to site★
           </a>
+          <a href="https://github.com/reveur96/moca" target="_blank"> ★github★</a>
         </div>
-        <div class="project_preview"></div>
+        <div class="project_preview">
+        </div>
       </section>
     </article>
 
     <!-- 컨텐츠 Project03 -->
-    <article class="project project03">
+    <article class="project" id="project03">
       <header class="contents_header_nav">
         <h5>
-          Project03
+          Project02
           <span class="material-symbols-outlined">
             expand_more
-            </span>
+          </span>
         </h5>
       </header>
       <section>
         <div class="project_detail">
-          <h5>Project title</h5>
+          <h5>MOCA</h5>
           <p>
             <strong>작업 과정</strong><br>
-            타경쟁사들과 달리 하나의 홈페이지에 회사홈페이지와 판매몰을 운영하고 있어서 사용자 입장에서 집중도가 떨어졌다. 또한 프랜차이즈 가맹 문의 고객과 일반 제품 구매를 원하는 고객들이 각자의 목적을 달성하기에 홈페이지의 정보들이 산발적으로 분포되어 있어 사용성이 떨어졌다. 우선 몰을 운영하고 있다는 점이 명확하게 보여지지않아 원활하게 판매로 이어지지않는 점을 보완하여 사용자가 쉽게 구매까지 이어질 수 있도록  구매 프로세스를 단순화한다.  그리고 프랜차이즈 문의 고객들이 브랜드의 색과 전문성을 느낄 수 있도록 제품 판매몰과 기업의 정보들을 분리하여 제공하고, 어떤 페이지에서 이용하여도 바로 문의 페이지로 이어질 수 있도록 접근성을 높인다.
-
+            기존의 사이트는 현재 전시 안내 사항이 메인에 슬라이드로 들어간 것이 전부였다. 그래서 미술관내에 있는 시설이나 여러 교육프로그램의 존재에 대해 사용자가 모르고 지나치는 경우가 발생했다. 이러한 점을
+            보완하기 위해 사용자들의 니즈가 큰 관람안내 사항을 메인 슬라이드 바로 아래에 배치하고 예약하기 기능을 사이드에 고정 메뉴로 두어 접근성을 높였다. 또한 스크롤 형식으로 메인 하단에 책그림선에 대한
+            정보와 책그림섬에서 진행하는 프로그램을 배치하여 사용자에게 책그림섬에 대한 정보를 제공한다.
+    
           </p>
           <p>
             <strong>기대효과</strong><br>
-            제품에 정보와 판매까지를 한 화면에서 가능하도록해서 소비자 이탈률을 줄여 구매효과를 상승시킬 수 있다. 제품을 구매하는 소비자와 프랜차이즈 문의를 목적으로 사이트를 방문한 고객들이 혼란을 겪지 않고 목적하는 바를 빠르게 이룰 수 있도록 시각화하여 고객의 접근성을 모두 높일 수 있다. 
-
+            미술관에서하는 전시 현황 이외에도 사이트에서 제공하는 다양한 서비스들을 사용자가 손쉽게 접근할 수 있어 참여도를 높인다. 다양한과 시설과 교육 프로그램 뿐만아니라 오디오 가이드와 vr전시관까지
+            사이트에서 제공하는 기능들을 강조하여 사용율을 높일 수 있다.
+    
           </p>
-          <a href="http://crystal96.dothome.co.kr/" target="_blank">
-            Go to Page
-            <span class="material-symbols-outlined">
-            star
-            </span>
+          <a href="http://misul3.dothome.co.kr" target="_blank">
+            ★Go to site★
           </a>
+          <a href="https://github.com/reveur96/moca" target="_blank"> ★github★</a>
         </div>
         <div class="project_preview"></div>
       </section>
     </article>
 
     <!-- 컨텐츠 Contact -->
-    <article class="contact">
+    <article id="contact">
       <header class="contents_header_nav">
         <h5>
           Contact
@@ -229,22 +256,13 @@
         <ul>
           <li>
             <a href="https://github.com/reveur96" target="_blank">
-              Git Hub
-              <span class="material-symbols-outlined">
-              favorite</span>
-            </a>
+              ♥ Git Hub ♥</a>
           </li>
           <li>
-            <a href="https://reveur1996.tistory.com/" target="_blank">T-story Hub
-              <span class="material-symbols-outlined">
-              favorite</span>
-            </a>
+            <a href="https://reveur1996.tistory.com/" target="_blank">♥ T-story Hub ♥</a>
           </li>
           <li>
-            <p>E-mail
-              <span class="material-symbols-outlined">
-                favorite</span>
-            </p>
+            <p>♥ E-mail ♥</p>
             <br>
             <a href="mailto:dlfrlwkd11@daum.net" target="_blank">
               dlfrlwkd11@daum.net
@@ -257,5 +275,7 @@
     </article>
   </section>
  <script src="./js/main_img.js"></script>
+ <script src="./js/nav.js"></script>
+ <script src="./js/top_btn.js"></script>
 </body>
 </html>
