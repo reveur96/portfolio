@@ -264,8 +264,8 @@ position: absolute;
 }
 
 #aboutme .profile_img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: url(../images/profile03.jpg) no-repeat;
   background-size: cover;
@@ -279,19 +279,22 @@ position: absolute;
 }
 
 #aboutme .profile > p{
-  font-size: 17px;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 10px;
 }
 
 #aboutme .profile p:nth-child(4){
-  font-size: 25px;
-  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
 }
 
 #aboutme .profile .Strength{
   width: 300px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #aboutme .profile .Strength > span{
@@ -303,7 +306,6 @@ justify-content: space-between;
   text-align: center;
   line-height: 90px;
   font-size: 18px;
-
 }
 
 #aboutme section .technical_part{
@@ -321,45 +323,95 @@ justify-content: space-between;
 }
 
 #aboutme .technical_part01{
-  width: 100%;
+  width: 500px;
   height: 200px;
-  padding: 20px 0;
+  padding: 20px 50px 20px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#aboutme .technical_part01 .technical_part01_txt{
+  height: 100px;
+}
+#aboutme .technical_part01 .technical_part01_txt li{
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-#aboutme .technical_part01 li{
-  font-size: 12px;
+#aboutme .technical_part01 .technical_part01_bar{
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 7px;
+}
+#aboutme .technical_part01 .technical_part01_bar li{
+  width: 350px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  
 }
 
+#aboutme .technical_part01 .technical_part01_bar li > span {
+  display: block;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #040463;
+}
+.bar01_html span{
+  width: 300px;
+}
+.bar02_css span{
+  width: 300px;
+}
+.bar03_js span{
+  width: 200px;
+}
+.bar04_react span{
+  width: 50px;
+}
 #aboutme .technical_part02{
   width: 100%;
   height: 250px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 20px 0;
   box-sizing: border-box;
 }
 
-#aboutme .technical_part02 ul{
-margin-right: 50px;
-}
-
-#aboutme ul.technical_part02_course{
-  width: 350px;
-}
-
-#aboutme ul.technical_part02_book{
-  width: 300px;
-}
-
-#aboutme .technical_part02 li{
-  margin-bottom: 5px;
-}
-
-#aboutme .technical_part02 li:first-child{
-  font-size: 15px;
-  font-weight: bold;
+#aboutme .technical_part02 li {
   margin-bottom: 10px;
+}
+
+#aboutme .technical_part02 p:first-child {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#aboutme .technical_part02_course{}
+#aboutme .technical_part02_course > ul{}
+
+#aboutme .technical_part02_course > ul > li{
+  width: 400px;
+  font-size: 13px;
+}
+
+#aboutme .technical_part02_course > ul > li > span{
+  margin-left: 30px;
+  float: right;
+}
+
+#aboutme .technical_part02_book{
+  width: 200px;
+}
+#aboutme .technical_part02_book > ul > li{
+    font-size: 13px;
 }
 
 #aboutme .technical_part03{
@@ -424,14 +476,21 @@ margin-right: 50px;
 #contents .project > section .project_preview{
   width: 700px;
   height: 900px;
-  background-color: aliceblue;
 }
 
-#project01{
-
+#project01 > section .project_preview {
+  background: url(../images/project01.png) no-repeat;
+  background-size: 100%;
 }
-#project02{
 
+#project02 > section .project_preview{
+  background: url(../images/project02.png) no-repeat;
+  background-size: 100%;
+}
+
+#project03 > section .project_preview {
+  background: url(../images/project03.png) no-repeat;
+  background-size: 100%;
 }
 
 /* 컨텐츠 contact */
