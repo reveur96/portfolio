@@ -7,6 +7,6 @@ window.addEventListener('scroll', function () {
   if (docScene < doc.scrollTop) {
     topBtn.className = "visible";
   } else {
-    topBtn.className = "";
+    topBtn.className = "invisible";
   };
 });
