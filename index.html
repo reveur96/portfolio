@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KimSuJeong_Resume</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/top_btn.css">
+  <link rel="stylesheet" href="./css/contents.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -19,13 +21,12 @@
         <li class="nav03"><a href="#project02">Project02</a></li>
         <li class="nav04"><a href="#contact">Contact</a></li>
         </ul>
-        <span class="material-symbols-outlined menu_btn">
-          menu
-        </span>
+        <button id="menu_btn"><span class="material-symbols-outlined" > menu</span>
+        </button>
     </nav>
     <section id="main">
       <p>Front End Developer</p>
-      <h3>KIM SU JEONG</h3>
+      <h2>KIM SU JEONG</h2>
       <p>PORTFOLIO</p>
     </section>
   </header>
@@ -46,31 +47,22 @@
     <p>06</p>
   </aside> -->
 
-  <aside>
-    <div id="top_btn">
-      <a href="#">
-        <span class="material-symbols-outlined">arrow_upward</span>
-      </a>
-    </div>
-  </aside>
   <!-- 컨텐츠 -->
   <section id="contents">
   <!-- 컨텐츠 About me -->
     <article id="aboutme">
       <header class="contents_header_nav">
-        <h5>
+        <h3>
           About me
           <!-- <span class="material-symbols-outlined">expand_more</span> -->
-        </h5>
+        </h3>
       </header>
       <section>
         <div class="profile">
           <div class="profile_image"></div>
-          <h5>Kim Su Jeong</h5>
-          <p>I majored in Clothing & Textile Design. <br>
-            I worked as Fashion Designer and Graphic Designer. <br>
-            Now i want to be a Front End Developer.<br>
-            I'm a passional & curious person.<br>
+          <div class="profile_txt">
+          <h4>Kim Su Jeong</h4>
+          <p> I'm a passional & curious person.<br>
             I love studying & developing.<br> 
             also, i love to solve problems.<br>
             I'm always trying to find new way.<br>
@@ -79,64 +71,67 @@
              I'm not just coder.<br>
              I'm a Creator & Developer.<br>
           </p>
-          <p>Strength</p>
+          </div>
           <div class="Strength">
-            <span>Passion</span>
-            <span>Tenacity</span>
-            <span>Creative</span>
+            <h5>Strength</h5>
+            <div>
+              <span>Passion</span>
+              <span>Tenacity</span>
+              <span>Creative</span>
+            </div>  
           </div>
         </div>
         <div class="technical_part">
-
-          <h5>Technique</h5>
           <div class="technical_part01">
-            <ul class="technical_part01_txt">
+            <h4 class="technical_part_tt">Technique</h4>
+            <div class="technical_part01_txt">
+            <ul class="technical_part01_skill">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
               <li>React</li>
             </ul>
-            <ul class="technical_part01_bar">
-              <li class="bar01_html"><span></span></li>
-              <li class="bar02_css"><span></span></li>
-              <li class="bar03_js"><span></span></li>
-              <li class="bar04_react"><span></span></li>
+            <ul class="technical_part01_skilldetail">
+              <li>이미지를 보고 도움없이 그대로 구현가능 </li>
+              <li>이미지를 보고 도움없이 그대로 구현가능 </li>
+              <li>도움 없이 간단한 기능구현이 가능하고 검색을 통해 문제 해결 가능. </li>
+              <li> 이론에 대한 기본 이해도가 있음.</li>
             </ul>
+            </div>
           </div>
 
-          <h5>How did i study</h5>
           <div class="technical_part02">
-            <div class="technical_part02_course">
-              <p>Course</p>
-              <ul>
-                <li>국비프로그램 프론트엔드 개발자 양성과정<span>진행중</span></span></li>
-                <li>생활코딩 자바스크립트 총정리<span>진행중</span></li>
-                <li>노마드코더 바닐라 자바스크립트로 크롬앱 제작하기<span>완료</span></li>
-                <li>제주 코딩캠프 자바스크립트<span>완료</span></li>
-              </ul>
-            </div>
-            <div class="technical_part02_book">
-              <p>Book</p>
-              <ul>
-                <li>How did i study</li>
-                <li>How did i study</li>
-                <li>How did i study</li>
-                <li>How did i study</li>
-              </ul>
+          <h4 class="technical_part_tt">How did i study</h4>
+          <div>
+              <div class="technical_part02_course">
+                <h5>Course</h5>
+                <ul>
+                  <li>국비프로그램 프론트엔드 개발자 양성과정<span class="ing">진행중</span></span></li>
+                  <li>생활코딩 자바스크립트 총정리<span class="ing">진행중</span></li>
+                  <li>노마드코더 바닐라 자바스크립트로 크롬앱 제작하기<span class="done">완료</span></li>
+                  <li>제주 코딩캠프 자바스크립트<span class="done">완료</span></li>
+                </ul>
+              </div>
+              <div class="technical_part02_book">
+                <h5>Book</h5>
+                <ul>
+                  <li>오늘부터 개발자 <span>김병욱</span></li>
+                  <li>1일 1로그 100일 완성 IT지식 <span>브라이언 W. 커니핸</span></li>
+                  <li>나는 프로그래머다 <span>김호광, 정도현</span></li>
+                  <li>실용주의 프로그래머 <span>데이비드 토머스</span></li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <h5>History</h5>
           <div class="technical_part03">
+          <h4 class="technical_part_tt">History</h4>
             <ul>
               <li><span>2014</span>대학교 입학</li>
-              <li><span>2015</span></li>
+              <li><span>2015 - 2016</span>프리랜서 그래픽 디자이너로 활동</li>
               <li><span>2016</span>스타트업 브랜드 디자이너로 근무</li>
-              <li><span>2017</span></li>
-              <li><span>2018</span></li>
-              <li><span>2019</span>대학교 졸업</li>
-              <li><span>2020</span>개인사업체 운영</li>
-              <li><span>2021</span>개인사업체 운영</li>
+              <li><span>2019</span>대학교 졸업, 외국계 패션 회사 근무</li>
+              <li><span>2020 - 2021</span>개인사업체 운영</li>
+              <li><span>2022 ~ </span>프론트엔드 개발 공부</li>
             </ul>
           </div>
         </div>
@@ -147,28 +142,25 @@
     <!-- 컨텐츠 Project01 -->
     <article class="project" id="project01">
       <header class="contents_header_nav">
-      <h5>
-        Project01
-        <!-- <span class="material-symbols-outlined">expand_more</span> -->
-      </h5>
+      <h3>Project01</h3>
       </header>
       <section>
-        <div class="project_detail">
-          <h5>HOLLYS COFFEE WEB SITE</h5>
+        <div id="project_detail01" class="project_detail">
+          <h4>HOLLYS COFFEE WEB SITE</h4>
+          <h5>작업 과정</h5>
           <p>
-            <strong>작업 과정</strong><br>
             타경쟁사들과 달리 하나의 홈페이지에 회사홈페이지와 판매몰을 운영하고 있어서 사용자 입장에서 집중도가 떨어졌다. 또한 프랜차이즈 가맹 문의 고객과 일반 제품 구매를 원하는 고객들이 각자의 목적을 달성하기에 홈페이지의 정보들이 산발적으로 분포되어 있어 사용성이 떨어졌다. 우선 몰을 운영하고 있다는 점이 명확하게 보여지지않아 원활하게 판매로 이어지지않는 점을 보완하여 사용자가 쉽게 구매까지 이어질 수 있도록  구매 프로세스를 단순화한다.  그리고 프랜차이즈 문의 고객들이 브랜드의 색과 전문성을 느낄 수 있도록 제품 판매몰과 기업의 정보들을 분리하여 제공하고, 어떤 페이지에서 이용하여도 바로 문의 페이지로 이어질 수 있도록 접근성을 높인다.
-
           </p>
-          <p>
-            <strong>기대효과</strong><br>
+          <h5 class="second">기대효과</h5>
+          <p  class="second">
             제품에 정보와 판매까지를 한 화면에서 가능하도록해서 소비자 이탈률을 줄여 구매효과를 상승시킬 수 있다. 제품을 구매하는 소비자와 프랜차이즈 문의를 목적으로 사이트를 방문한 고객들이 혼란을 겪지 않고 목적하는 바를 빠르게 이룰 수 있도록 시각화하여 고객의 접근성을 모두 높일 수 있다. 
-
           </p>
+          <div class="goto">
           <a href="http://crystal96.dothome.co.kr/" target="_blank">
-            ★Go to site★
+            Go to site
           </a>
-          <a href="https://github.com/reveur96/my-first-website" target="_blank"> ★github★</a>
+          <a href="https://github.com/reveur96/my-first-website" target="_blank">github</a>
+          </div>
         </div>
         <div class="project_preview"></div>
       </section>
@@ -177,104 +169,74 @@
     <!-- 컨텐츠 Project02 -->
     <article class="project" id="project02">
       <header class="contents_header_nav">
-        <h5>
-          Project02
-          <!-- <span class="material-symbols-outlined">expand_more</span> -->
-          </h5>
+        <h3>Project02</h3>
       </header>
       <section>
-        <div class="project_detail">
-          <h5>MOCA</h5>
+        <div id="project_detail02"  class="project_detail">
+          <h4>MOCA</h4>
+          <h5>작업 과정</h5>
           <p>
-            <strong>작업 과정</strong><br>
             기존의 사이트는 현재 전시 안내 사항이 메인에 슬라이드로 들어간 것이 전부였다. 그래서 미술관내에 있는 시설이나 여러 교육프로그램의 존재에 대해 사용자가 모르고 지나치는 경우가 발생했다. 이러한 점을 보완하기 위해 사용자들의 니즈가 큰 관람안내 사항을 메인 슬라이드 바로 아래에 배치하고 예약하기 기능을 사이드에 고정 메뉴로 두어 접근성을 높였다. 또한 스크롤 형식으로 메인 하단에 책그림선에 대한 정보와 책그림섬에서 진행하는 프로그램을 배치하여 사용자에게 책그림섬에 대한 정보를 제공한다. 
-
           </p>
-          <p>
-            <strong>기대효과</strong><br>
+          <h5 class="second">기대효과</h5>
+          <p class="second">
             미술관에서하는 전시 현황 이외에도 사이트에서 제공하는 다양한 서비스들을 사용자가 손쉽게 접근할 수 있어 참여도를 높인다. 다양한과 시설과 교육 프로그램 뿐만아니라 오디오 가이드와 vr전시관까지 사이트에서 제공하는 기능들을 강조하여 사용율을 높일 수 있다.
-
           </p>
+          <div class="goto">
           <a href="http://misul3.dothome.co.kr" target="_blank">
-            ★Go to site★
+            Go to site
           </a>
-          <a href="https://github.com/reveur96/moca" target="_blank"> ★github★</a>
+          <a href="https://github.com/reveur96/moca" target="_blank"> github</a>
+          </div>
         </div>
         <div class="project_preview">
         </div>
       </section>
     </article>
 
-    <!-- 컨텐츠 Project03
-    <article class="project" id="project03">
-      <header class="contents_header_nav">
-        <h5>
-          Project02
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </h5>
-      </header>
-      <section>
-        <div class="project_detail">
-          <h5>MOCA</h5>
-          <p>
-            <strong>작업 과정</strong><br>
-            기존의 사이트는 현재 전시 안내 사항이 메인에 슬라이드로 들어간 것이 전부였다. 그래서 미술관내에 있는 시설이나 여러 교육프로그램의 존재에 대해 사용자가 모르고 지나치는 경우가 발생했다. 이러한 점을
-            보완하기 위해 사용자들의 니즈가 큰 관람안내 사항을 메인 슬라이드 바로 아래에 배치하고 예약하기 기능을 사이드에 고정 메뉴로 두어 접근성을 높였다. 또한 스크롤 형식으로 메인 하단에 책그림선에 대한
-            정보와 책그림섬에서 진행하는 프로그램을 배치하여 사용자에게 책그림섬에 대한 정보를 제공한다.
-    
-          </p>
-          <p>
-            <strong>기대효과</strong><br>
-            미술관에서하는 전시 현황 이외에도 사이트에서 제공하는 다양한 서비스들을 사용자가 손쉽게 접근할 수 있어 참여도를 높인다. 다양한과 시설과 교육 프로그램 뿐만아니라 오디오 가이드와 vr전시관까지
-            사이트에서 제공하는 기능들을 강조하여 사용율을 높일 수 있다.
-    
-          </p>
-          <a href="http://misul3.dothome.co.kr" target="_blank">
-            ★Go to site★
-          </a>
-          <a href="https://github.com/reveur96/moca" target="_blank"> ★github★</a>
-        </div>
-        <div class="project_preview"></div>
-      </section>
-    </article> -->
-
     <!-- 컨텐츠 Contact -->
     <article id="contact">
       <header class="contents_header_nav">
-        <h5>
+        <h3>
           Contact
           <!-- <span class="material-symbols-outlined">expand_more</span> -->
-        </h5>
+        </h3>
       </header>
       <section>
-        <h3>Get in touch</h3>
+        <h4 class="blink">Get in touch</h4>
         <p>I hope to work with you.</p>
         <ul>
           <li>
             <a href="https://github.com/reveur96" target="_blank">
-              ♥ Git Hub ♥</a>
+              Git Hub</a>
           </li>
           <li>
-            <a href="https://reveur1996.tistory.com/" target="_blank">♥ T-story Hub ♥</a>
+            <a href="https://reveur1996.tistory.com/" target="_blank">T-story Hub</a>
           </li>
           <li>
-            <p>♥ E-mail ♥</p>
-            <br>
-            <a href="mailto:dlfrlwkd11@daum.net" target="_blank">
-              dlfrlwkd11@daum.net
+            <a href="mailto:KrystalK170@gmail.com" target="_blank">
+              KrystalK170@gmail.com
             </a>
           </li>
         </ul>
 
-
       </section>
     </article>
+      <aside>
+        <div id="top_btn">
+          <a href="#">
+            <span class="material-symbols-outlined">arrow_upward</span>
+          </a>
+        </div>
+      </aside>
   </section>
  <script src="./js/main_img.js"></script>
   <script src="./js/profile_img.js"></script>
+  <script src="./js/profile.js"></script>
  <script src="./js/nav.js"></script>
  <script src="./js/top_btn.js"></script>
+<script src="./js/project01.js"></script>
+<script src="./js/project02.js"></script>
+
 </body>
 </html>

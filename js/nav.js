@@ -1,27 +1,41 @@
+/** @format */
+const docnav = document.documentElement;
+const docHeightnav = window.pageYOffset;
+const docScenenav = docHeightnav / 6 + 800;
 
-window.addEventListener('load',function(){
-    const menu_btn = document.querySelector('.menu_btn');
-    const menu = document.querySelector('.menu');
+const menu_btn = document.querySelector("#menu_btn");
+const menu = document.querySelector(".menu");
 
-  menu_btn.addEventListener('click', function () {
-    menu.classList.toggle('menu_on');
-    menu.classList.toggle('menu');
-  });
+window.addEventListener("scroll", function () {
+  if (docScenenav < docnav.scrollTop) {
+    menu_btn.classList.add("menu_btn_on");
+    menu_btn.classList.remove("menu_btn_off");
+  } else {
+    menu_btn.classList.remove("menu_btn_on");
+    menu_btn.classList.add("menu_btn_off");
+    menu.classList.remove("menu_on");
+    menu.classList.add("menu");
+  }
 });
 
-function gogo () {
-  const menu = $('.menu > li');
-  const contents = $('#wrap > article');
+menu_btn.addEventListener("click", function () {
+  menu.classList.toggle("menu");
+  menu.classList.toggle("menu_on");
+});
 
-  $('.menu> li').click(function (event) {
+function gogo() {
+  const menu = $(".menu > li");
+  const contents = $("#wrap > article");
+
+  $(".menu> li").click(function (event) {
     event.preventDefault();
-        
+
     const tg = $(this);
     const i = tg.index();
-        
-    const section = $('#wrap > article').eq(i);
+
+    const section = $("#wrap > article").eq(i);
     const tt = section.offset().top;
-        
-    $('html, body').stop().animate({scrollTop: tt});
+
+    $("html, body").stop().animate({ scrollTop: tt });
   });
-};
+}

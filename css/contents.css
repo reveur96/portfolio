@@ -1,0 +1,485 @@
+.material-symbols-outlined {
+  position: absolute;
+  top: 5px;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+/* 컨텐츠 */
+#contents {
+  width: 100%;
+}
+
+#contents .contents_header_nav {
+  width: 100%;
+  height: 100px;
+  padding: 0 150px 15px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+#contents .contents_header_nav h3 {
+  font-size: 15px;
+  border-bottom: 1px solid #040463;
+}
+
+/* 컨텐츠 About me */
+#aboutme {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+}
+
+#aboutme section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#aboutme section>.profile {
+  width: 500px;
+  height: 950px;
+  position: absolute;
+  top: -100px;
+  left: 180px;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1.5s ease-in-out;
+}
+
+.profile_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+  transition: all 1.5s ease-in-out;
+}
+
+#aboutme .profile_txt {
+  height: 300px;
+  transition: all 1.5s ease-in-out;
+}
+
+#aboutme .profile>.profile_txt>h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#aboutme .profile>.profile_txt>p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#aboutme .profile>.Strength {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  transition: all 1.5s ease-in-out;
+}
+
+#aboutme .profile>.Strength>h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#aboutme .profile>.Strength>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#aboutme .profile .Strength>div>span {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 90px;
+  font-size: 18px;
+}
+
+#aboutme section .technical_part {
+  height: 850px;
+  position: absolute;
+  top: 0;
+  right: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#aboutme .technical_part .technical_part_tt {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#aboutme .technical_part01 {
+  width: 700px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 1.5s ease-in-out;
+}
+
+#aboutme .technical_part01 .technical_part01_txt {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#aboutme .technical_part01 .technical_part01_skill li {
+  width: 80px;
+  height: 23px;
+  font-size: 13px;
+  color: #040463;
+  border: 1px solid #040463;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+#aboutme .technical_part01 .technical_part01_skilldetail {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#aboutme .technical_part01 .technical_part01_skilldetail>li {
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+#aboutme .technical_part02 {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  box-sizing: border-box;
+  transition: all 1.5s ease-in-out;
+}
+
+#aboutme .technical_part02>div {
+  display: flex;
+  flex-direction: row;
+}
+
+#aboutme .technical_part02 li {
+  margin-bottom: 10px;
+}
+
+#aboutme .technical_part02 h5 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#aboutme .technical_part02_course {}
+
+#aboutme .technical_part02_course>ul {}
+
+#aboutme .technical_part02_course>ul>li {
+  width: 400px;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#aboutme .technical_part02_course>ul>li>span {
+  font-size: 12px;
+  margin-right: 20px;
+  float: right;
+  width: 48px;
+  height: 22px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.ing {
+  border: 1px solid #040463;
+}
+
+.done {
+  color: #fff;
+  background-color: #040463;
+}
+
+#aboutme .technical_part02_book {
+  width: 300px;
+  margin-left: 20px;
+}
+
+#aboutme .technical_part02_book>ul>li {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#aboutme .technical_part02_book>ul>li>span {
+  font-size: 12px;
+  float: right;
+  text-align: center;
+  line-height: 22px;
+}
+
+#aboutme .technical_part03 {
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  transition: all 1.5s ease-in-out;
+}
+
+#aboutme .technical_part03 li {
+  margin-bottom: 10px;
+}
+
+#aboutme .technical_part03 span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+
+/* 컨텐츠 Project */
+#contents .project {
+  width: 100%;
+  height: 1080px;
+  margin-bottom: 200px;
+}
+
+#contents .project>section {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 300px 0 200px;
+  box-sizing: border-box;
+}
+
+#contents .project>section .project_detail {
+  width: 600px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+#contents .project>section .project_detail h4 {
+  font-size: 25px;
+  transition: all 1.5s ease-in-out;
+}
+
+#contents .project>section .project_detail h5 {
+  font-size: 15px;
+  transition: all 1.5s ease-in-out;
+}
+
+#contents .project>section .project_detail p {
+  width: 450px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 20px;
+  transition: all 1.5s ease-in-out;
+}
+#contents .project>section .project_detail> .goto{
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 1.5s ease-in-out;
+}
+#contents .project>section .project_detail> .goto > a {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  border: 2px solid #040463;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 38px;
+}
+
+#contents .project>section .project_detail>.goto>a:hover{
+  background-color:  #040463;
+  color: #fff;
+}
+
+
+#contents .project>section .project_preview {
+  width: 700px;
+  height: 900px;
+}
+
+#project01>section .project_preview {
+  background: url(../images/project01.png) no-repeat;
+  background-size: 100%;
+}
+
+#project02>section .project_preview {
+  background: url(../images/project02.png) no-repeat;
+  background-size: 100%;
+}
+
+#project03>section .project_preview {
+  background: url(../images/project03.png) no-repeat;
+  background-size: 100%;
+}
+
+/* 컨텐츠 contact */
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#contact section {
+  height: 850px;
+  padding: 200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact section>h4 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.blink {
+  animation: blink-effect 1.5s ease-in-out infinite;
+}
+
+#contact section>h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#contact section>p {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+#contact section ul {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact section li {
+  font-size: 18px;
+  text-align: center;
+}
+
+#contact section li>a {
+  padding: 10px 20px;
+  border: 2px solid #040463;
+  border-radius: 40px;
+}
+
+#contact section li>a:hover {
+  padding: 10px 20px;
+  background-color: #040463;
+  color: #fff;
+  border-radius: 40px;
+}
+
+/* about me */
+@keyframes profiledown {
+  from{
+    height: 0;
+  }
+  to{
+    height: 920px;
+  }
+}
+
+@keyframes profiledown02 {
+  from {
+      transform: translate(0, -200px);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+@keyframes technical_part01 {
+  from {
+    opacity: 0;
+    transform: translate(200px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+/* project */
+
+@keyframes project_detail {
+  from {
+    opacity: 0;
+    transform: translate(0, 400px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+@keyframes blink-effect {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
