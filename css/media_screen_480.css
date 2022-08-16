@@ -26,6 +26,28 @@
     font-size: 1.7vw;
     color: aliceblue;
   }
+.menu_on {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background-color: aliceblue;
+  border-left: 1px solid rgb(223, 237, 249);
+  padding: 15vw 10vw;
+  border-radius: 0;
+}
+
+#header .menu_on li {
+  margin-bottom: 5vw;
+  text-align: center;
+}
+.menu_on li>a {
+  font-size: 4vw;
+  color: #040463;
+}
 
   .menu_btn_on {
     color: #040463;
@@ -84,7 +106,7 @@
   }
 
   #contents .contents_header_nav h3 {
-    font-size: 1.5vw;
+    font-size: 3vw;
     border-bottom: 1px solid #040463;
   }
 
@@ -107,7 +129,7 @@
   #aboutme section>.profile {
     width: 70vw;
     /* 500px*/
-    height: 80vw;
+    height: 100vw;
     position: relative;
     top: 0vw;
     left: 0;

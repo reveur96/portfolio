@@ -11,8 +11,6 @@ const project01p = document.querySelector("#project_detail01 > p");
 const project01ps = document.querySelector("#project_detail01 > p.second");
 const project01btn = document.querySelector("#project_detail01 > .goto");
 
-console.log(documentH);
-console.log(doc02.scrollTop);
 window.addEventListener("scroll", function () {
   if (3800 < documentH01 && docScene01 < docProject01.scrollTop) {
     project01h4.style.animation = "project_detail 2s forwards alternate 0.3s";

@@ -124,10 +124,10 @@
   height: 850px;
   position: relative;
   top: 0;
-  left : 180px;
+  left : 230px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #aboutme .technical_part .technical_part_tt {
