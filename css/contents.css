@@ -122,9 +122,9 @@
 
 #aboutme section .technical_part {
   height: 850px;
-  position: absolute;
+  position: relative;
   top: 0;
-  right: 240px;
+  left : 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -148,7 +148,6 @@
   display: flex;
   flex-direction: row;
 }
-
 
 #aboutme .technical_part01 .technical_part01_skill li {
   width: 80px;
@@ -311,6 +310,7 @@
   margin-bottom: 20px;
   transition: all 1.5s ease-in-out;
 }
+
 #contents .project>section .project_detail> .goto{
   width: 250px;
   display: flex;
@@ -318,6 +318,7 @@
   justify-content: space-between;
   transition: all 1.5s ease-in-out;
 }
+
 #contents .project>section .project_detail> .goto > a {
   width: 100px;
   height: 40px;
@@ -338,7 +339,7 @@
 
 #contents .project>section .project_preview {
   width: 700px;
-  height: 900px;
+  height: auto;
 }
 
 #project01>section .project_preview {
@@ -351,10 +352,6 @@
   background-size: 100%;
 }
 
-#project03>section .project_preview {
-  background: url(../images/project03.png) no-repeat;
-  background-size: 100%;
-}
 
 /* 컨텐츠 contact */
 #contact {
