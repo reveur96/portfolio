@@ -1,13 +1,13 @@
 /** @format */
-const docnav = document.documentElement;
-const docHeightnav = window.pageYOffset;
-const docScenenav = docHeightnav / 6 + 800;
-
+const doc_nav = document.documentElement;
 const menu_btn = document.querySelector("#menu_btn");
 const menu = document.querySelector(".menu");
+const documentH_nav = document.body.scrollHeight;
+const docHeight_nav = window.pageYOffset;
+const docScene_nav = documentH_nav / 8;
 
 window.addEventListener("scroll", function () {
-  if (docScenenav < docnav.scrollTop) {
+  if (docScene_nav < doc_nav.scrollTop) {
     menu_btn.classList.add("menu_btn_on");
     menu_btn.classList.remove("menu_btn_off");
   } else {

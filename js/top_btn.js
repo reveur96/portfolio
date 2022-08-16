@@ -3,9 +3,11 @@
 const doc = document.documentElement;
 const topBtn = document.querySelector("#top_btn");
 const topBtna = document.querySelector("#top_btn>a");
+const documentH = document.body.scrollHeight;
 const docHeight = window.pageYOffset;
-const docScene = docHeight / 6 + 500;
+const docScene = documentH / 8;
 
+topBtn.className = "invisible";
 window.addEventListener("scroll", function () {
   if (docScene < doc.scrollTop) {
     topBtn.className = "visible";
