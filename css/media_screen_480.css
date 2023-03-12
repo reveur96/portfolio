@@ -1,0 +1,569 @@
+@media screen and (max-width: 480px) {
+  #header .menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+  }
+
+  #header .menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 2vw;
+    right: 5vw;
+  }
+
+  #header .menu li {
+    width: 12vw;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  #header .menu li>a {
+    font-size: 1.7vw;
+    color: aliceblue;
+  }
+.menu_on {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background-color: aliceblue;
+  border-left: 1px solid rgb(223, 237, 249);
+  padding: 15vw 10vw;
+  border-radius: 0;
+}
+
+#header .menu_on li {
+  margin-bottom: 5vw;
+  text-align: center;
+}
+.menu_on li>a {
+  font-size: 4vw;
+  color: #040463;
+}
+
+  .menu_btn_on {
+    color: #040463;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    position: fixed;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .menu_btn_on>span {
+    font-size: 8vw;
+  }
+
+  #main {
+    width: 100%;
+    padding: 15vw;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 9997;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main h2 {
+    font-size: 4vw;
+    color: aliceblue;
+    letter-spacing: 1vw;
+    margin: 1vw 0;
+  }
+
+  #main p {
+    font-size: 1vw;
+    color: aliceblue;
+    letter-spacing: 1vw;
+  }
+
+  #main p:last-child {
+    font-size: 1vw;
+    color: aliceblue;
+    font-weight: 700;
+    letter-spacing: 1vw;
+  }
+
+  #contents .contents_header_nav {
+    width: 100vw;
+    height: 10vw;
+    padding: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  #contents .contents_header_nav h3 {
+    font-size: 3vw;
+    border-bottom: 1px solid #040463;
+  }
+
+  #aboutme {
+    width: 100vw;
+    height: 250vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutme section {
+    width: 100vw;
+    height: 220vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10vw;
+  }
+
+  #aboutme section>.profile {
+    width: 70vw;
+    /* 500px*/
+    height: 100vw;
+    position: relative;
+    top: 0vw;
+    left: 0;
+    /*100px*/
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5vw 0;
+    /*50px*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1.5s ease-in-out;
+    margin-bottom: 10vw;
+  }
+
+  @keyframes profiledown {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 100vw;
+    }
+  }
+
+  .profile_img {
+    width: 25vw;
+    /* 250px*/
+    height: 25vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+    transition: all 1.5s ease-in-out;
+  }
+
+  #aboutme .profile_txt {
+    height: auto;
+    /*300px*/
+    transition: all 1.5s ease-in-out;
+  }
+
+  #aboutme .profile>.profile_txt>h4 {
+    font-size: 5vw;
+    /*30px*/
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  #aboutme .profile>.profile_txt>p {
+    font-size: 2.5vw;
+    line-height: 3vw;
+    margin-bottom: 1.5vw;
+  }
+
+  #aboutme .profile>.Strength {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+    transition: all 1.5s ease-in-out;
+  }
+
+  #aboutme .profile>.Strength>h5 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  #aboutme .profile>.Strength>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #aboutme .profile .Strength>div>span {
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 10vw;
+    font-size: 1.2vw;
+  }
+
+  #aboutme section .technical_part {
+    width: 60vw;
+    height: 120vw;
+    position: relative;
+    top: 0;
+    left: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #aboutme .technical_part .technical_part_tt {
+    font-size: 4vw;
+    margin-bottom: 1.5vw;
+  }
+
+  #aboutme .technical_part01 {
+    width: 60vw;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 1.5s ease-in-out;
+    margin-bottom: 1.5vw;
+  }
+
+  #aboutme .technical_part01 .technical_part01_txt {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #aboutme .technical_part01 .technical_part01_skill {
+    height: auto;
+  }
+
+  #aboutme .technical_part01 .technical_part01_skill li {
+    width: 10vw;
+    height: 4vw;
+    font-size: 1.7vw;
+    color: #040463;
+    border: 1px solid #040463;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 4vw;
+    margin-bottom: 0.5vw;
+  }
+
+  #aboutme .technical_part01 .technical_part01_skilldetail {
+    width: 60vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.2vw;
+    box-sizing: border-box;
+  }
+
+  #aboutme .technical_part01 .technical_part01_skilldetail>li {
+    font-size: 0.7vw;
+    margin-left: 1vw;
+    line-height: 4vw;
+  }
+
+  #aboutme .technical_part02 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: all 1.5s ease-in-out;
+    margin-bottom: 1.5vw;
+  }
+
+  #aboutme .technical_part02>div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutme .technical_part02 li {
+    margin-bottom: 10px;
+
+  }
+
+  #aboutme .technical_part02 h5 {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  #aboutme .technical_part02_course {
+    margin-bottom: 1vw;
+  }
+
+  #aboutme .technical_part02_course>ul {}
+
+  #aboutme .technical_part02_course>ul>li {
+    width: 70vw;
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+
+  #aboutme .technical_part02_course>ul>li>span {
+    font-size: 0.7vw;
+    float: right;
+    width: 7vw;
+    height: 4vw;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 4vw;
+  }
+
+  .ing {
+    border: 1px solid #040463;
+  }
+
+  .done {
+    color: #fff;
+    background-color: #040463;
+  }
+
+  #aboutme .technical_part02_book {
+    width: 60vw;
+    margin-left: 0;
+  }
+
+  #aboutme .technical_part02_book>ul>li {
+    font-size: 0.7vw;
+    line-height: 1vw;
+  }
+
+  #aboutme .technical_part02_book>ul>li>span {
+    font-size: 0.7vw;
+    float: right;
+    text-align: center;
+    line-height: 1vw;
+  }
+
+  #aboutme .technical_part03 {
+    width: 60vw;
+    height: auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+    transition: all 1.5s ease-in-out;
+  }
+
+  #aboutme .technical_part03 li {
+    margin-bottom: 10px;
+    font-size: 0.7vw;
+    line-height: 1vw;
+  }
+
+  #aboutme .technical_part03 span {
+    font-size: 0.7vw;
+    margin-right: 10px;
+  }
+
+  /* 컨텐츠 Project */
+  #contents .project {
+    width: 100vw;
+    height: 180vw;
+    margin-bottom: 5vw;
+  }
+
+  #contents .project>section {
+    width: 100vw;
+    height: 160vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 10vw 0;
+    box-sizing: border-box;
+  }
+
+  #contents .project>section .project_detail {
+    width: 100vw;
+    height: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw 2vw;
+    box-sizing: border-box;
+  }
+
+  #contents .project>section .project_detail h4 {
+    font-size: 2.5vw;
+    transition: all 1.5s ease-in-out;
+  }
+
+  #contents .project>section .project_detail h5 {
+    font-size: 1.2vw;
+    transition: all 1.5s ease-in-out;
+  }
+
+  #contents .project>section .project_detail p {
+    width: 60vw;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 3vw;
+    margin-bottom: 1.5vw;
+    transition: all 1.5s ease-in-out;
+  }
+
+  #contents .project>section .project_detail>.goto {
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 1.5s ease-in-out;
+  }
+
+  #contents .project>section .project_detail>.goto>a {
+    width: 18vw;
+    height: 4vw;
+    font-size: 1vw;
+    font-weight: 500;
+    position: relative;
+    border: 1.5px solid #040463;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 3vw;
+  }
+
+  #contents .project>section .project_preview {
+    margin: 0 auto;
+    position: relative;
+    width: 60vw;
+    height: 50vw;
+
+  }
+
+  #project01>section .project_preview {
+    background: url(../images/project01.png) no-repeat;
+    background-size: 100%;
+  }
+
+  /*contact*/
+  #contact section {
+    height: 50vw;
+    padding: 15vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact section>p {
+    font-size: 20px;
+    margin-bottom: 5vw;
+  }
+
+  #contact section ul {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #contact section li {
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  #contact section li>a {
+    padding: 0.5vw 1vw;
+    border: 1.5px solid #040463;
+    border-radius: 15vw;
+  }
+
+
+#contact section {
+  height: 100vw;
+  padding: 10vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact section>h4 {
+  font-size: 10vw;
+  margin-bottom: 10px;
+}
+
+.blink {
+  animation: blink-effect 1.5s ease-in-out infinite;
+}
+
+#contact section>h5 {
+  font-size: 15px;
+  margin-bottom: 5vw;
+}
+
+#contact section>p {
+  font-size: 20px;
+  margin-bottom: 10vw;
+}
+
+#contact section ul {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact section li {
+  font-size:3vw;
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+#contact section li>a {
+  padding: 10px 20px;
+  border: 2px solid #040463;
+  border-radius: 40px;
+}
+
+#contact section li>a:hover {
+  padding: 10px 20px;
+  background-color: #040463;
+  color: #fff;
+  border-radius: 40px;
+}
+
+    /*top button*/
+    .visible {
+      width: 8vw;
+      height: 8vw;
+      border-radius: 50%;
+      border: 2px solid #040463;
+      box-sizing: border-box;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 9999;
+    }
+  
+    #top_btn>a>span {
+      line-height: 5vw;
+      font-size: 5vw;
+    }
+
+}
