@@ -1,8 +1,12 @@
-const images = ["01.jpg","02.jpg","03.jpg"];
-const main = document.querySelector('#header');
-const chosenImage = images[Math.floor(Math.random()* images.length)];
-const bgImage = document.createElement("img");
+/** @format */
 
-bgImage.src = `./images/${chosenImage}`;
+// /** @format */
 
-main.appendChild(bgImage);
+// const images = ["01.jpg", "02.jpg"];
+// const main = document.querySelector("#header");
+// const chosenImage = images[Math.floor(Math.random() * images.length)];
+// const bgImage = document.createElement("img");
+
+// bgImage.src = `./images/${chosenImage}`;
+
+// main.appendChild(bgImage);

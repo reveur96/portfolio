@@ -15,13 +15,15 @@ window.addEventListener("scroll", function () {
     topBtn.className = "invisible";
   }
 });
-
+topBtna.classList.add("mouseeventaa");
 topBtn.addEventListener("mouseover", function () {
   this.className = "mouseevent";
+  topBtna.classList.remove("mouseeventaa");
   topBtna.classList.add("mouseeventa");
 });
 
 topBtn.addEventListener("mouseleave", function () {
   this.className = "visible";
   topBtna.classList.remove("mouseeventa");
+  topBtna.classList.add("mouseeventaa");
 });

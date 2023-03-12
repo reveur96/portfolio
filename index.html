@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="./css/media_screen.css">
   <link rel="stylesheet" href="./css/media_screen_480.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Urbanist:wght@200;300;500&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
   <!-- 상단 -->
@@ -21,15 +27,21 @@
         <li class="nav01"><a href="#aboutme">About me</a></li>
         <li class="nav02"><a href="#project01">Project01</a></li>
         <li class="nav03"><a href="#project02">Project02</a></li>
-        <li class="nav04"><a href="#contact">Contact</a></li>
+        <li class="nav04"><a href="#contacts">Contacts</a></li>
         </ul>
-        <button id="menu_btn"><span class="material-symbols-outlined" > menu</span>
-        </button>
     </nav>
-    <section id="main">
-      <p>Front End Developer</p>
-      <h2>KIM SU JEONG</h2>
-      <p>PORTFOLIO</p>
+    <section id="main"> 
+      <div class="borderBox">
+      <p>Hello, i'm sujeong.</p>
+      <h2>Creative <br> Developer</h2>
+      <p>This is my portfolio.</p>
+      </div>
+      <div class="scrollDown">
+<p>Scroll<br>down!</p>
+      </div>
+      <span class="material-symbols-sharp">
+        keyboard_double_arrow_down
+      </span>
     </section>
   </header>
 
@@ -48,9 +60,8 @@
           <div class="profile_image"></div>
           <div class="profile_txt">
           <h4>Kim Su Jeong</h4>
-          <p> I'm a passional & curious person.<br>
-            I love studying & developing.<br> 
-            also, i love to solve problems.<br>
+          <p> I'm a passional person.<br>
+            I love studying and developing.<br> 
             I'm always trying to find new way.<br>
             "How do i work more efficient?"<br>
             "How it can be more easily?"<br>
@@ -61,13 +72,14 @@
           <div class="Strength">
             <h5>Strength</h5>
             <div>
-              <span>Passion</span>
-              <span>Tenacity</span>
-              <span>Creative</span>
+              <span class="str01">Passion</span>
+              <span class="str02">Tenacity</span>
+              <span class="str03">Creative</span>
             </div>  
           </div>
         </div>
         <div class="technical_part">
+          <div class="technical_part_left">
           <div class="technical_part01">
             <h4 class="technical_part_tt">Technique</h4>
             <div class="technical_part01_txt">
@@ -85,41 +97,42 @@
             </ul>
             </div>
           </div>
-
           <div class="technical_part02">
-          <h4 class="technical_part_tt">How did i study</h4>
-          <div>
-              <div class="technical_part02_course">
-                <h5>Course</h5>
-                <ul>
-                  <li>국비프로그램 프론트엔드 개발자 양성과정<span class="ing">진행중</span></span></li>
-                  <li>생활코딩 자바스크립트 총정리<span class="ing">진행중</span></li>
-                  <li>노마드코더 바닐라 자바스크립트로 크롬앱 제작하기<span class="done">완료</span></li>
-                  <li>제주 코딩캠프 자바스크립트<span class="done">완료</span></li>
-                </ul>
-              </div>
-              <div class="technical_part02_book">
-                <h5>Book</h5>
-                <ul>
-                  <li>오늘부터 개발자 <span>김병욱</span></li>
-                  <li>1일 1로그 100일 완성 IT지식 <span>브라이언 W. 커니핸</span></li>
-                  <li>나는 프로그래머다 <span>김호광, 정도현</span></li>
-                  <li>실용주의 프로그래머 <span>데이비드 토머스</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="technical_part03">
-          <h4 class="technical_part_tt">History</h4>
+            <h4 class="technical_part_tt">History</h4>
             <ul>
               <li><span>2014</span>경희대학교 입학</li>
               <li><span>2015 - 2016</span>프리랜서 그래픽 디자이너로 활동</li>
               <li><span>2016</span>스타트업 브랜드 디자이너로 근무</li>
               <li><span>2019</span>경희대학교 졸업, 외국계 패션 회사 근무</li>
               <li><span>2020 - 2021</span>개인사업체 운영</li>
-              <li><span>2022 ~ </span>프론트엔드 개발 공부</li>
+              <li><span>2022</span>프론트엔드 개발자 양성과정 국비프로그램 수료</li>
             </ul>
           </div>
+          </div>
+          <div class="technical_part03">
+          <h4 class="technical_part_tt">How did i study</h4>
+              <div class="technical_part03_course">
+                <h5>Course</h5>
+                <ul>
+                  <li>위코드 부트캠프 45기<span class="ing">진행중</span></span></li>
+                  <li>국비프로그램 프론트엔드 개발자 양성과정<span class="done">완료</span></span></li>
+                  <li>생활코딩 자바스크립트 총정리<span class="done">완료</span></li>
+                  <li>노마드코더 바닐라 자바스크립트로 크롬앱 제작하기<span class="done">완료</span></li>
+                  <li>제주 코딩캠프 자바스크립트<span class="done">완료</span></li>
+                </ul>
+              </div>
+              <div class="technical_part03_book">
+                <h5>Book</h5>
+                <ul>
+                  <li>오늘부터 개발자 <span>김병욱</span></li>
+                  <li>1일 1로그 100일 완성 IT지식 <span>브라이언 W. 커니핸</span></li>
+                  <li>나는 프로그래머다 <span>김호광, 정도현</span></li>
+                  <li>실용주의 프로그래머 <span>데이비드 토머스</span></li>
+                  <li>프로그래머의 길, 멘토에게 묻다 <span>데이브 후버,<br> 에디웨일 오시나이</span></li>
+                </ul>
+              </div>
+          </div>
+
         </div>
       </section>
       
@@ -181,10 +194,10 @@
     </article>
 
     <!-- 컨텐츠 Contact -->
-    <article id="contact">
+    <article id="contacts">
       <header class="contents_header_nav">
         <h3>
-          Contact
+          Contacts
           <!-- <span class="material-symbols-outlined">expand_more</span> -->
         </h3>
       </header>
@@ -216,10 +229,12 @@
         </div>
       </aside>
   </section>
- <script src="./js/main_img.js"></script>
-  <script src="./js/profile_img.js"></script>
+ <!-- <script src="./js/main_img.js"></script> -->
+  <!-- <script src="./js/profile_img.js"></script> -->
   <script src="./js/profile.js"></script>
- <script src="./js/nav.js"></script>
+  <script src="./js/navclick.js"></script>
+ <!-- <script src="./js/nav.js"></script> -->
+ <script src="./js/navcolor.js"></script>
  <script src="./js/top_btn.js"></script>
 <script src="./js/project01.js"></script>
 <script src="./js/project02.js"></script>
